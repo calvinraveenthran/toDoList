@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--To-do list-->
+        <!--To-Do List-->
         <scene sceneID="H6j-jg-8Ly">
             <objects>
                 <tableViewController id="tsg-fM-mRb" customClass="ToDoListTableViewController" sceneMemberID="viewController">
@@ -39,10 +39,11 @@
                             <outlet property="delegate" destination="tsg-fM-mRb" id="z02-Xf-Bf7"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="To-do list" id="L2W-Xt-s4e">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="sUc-O7-aXj">
+                    <navigationItem key="navigationItem" title="To-Do List" id="L2W-Xt-s4e">
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="FD9-iX-pOI"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="ZIx-nb-Jna">
                             <connections>
-                                <segue destination="vhC-1T-i2U" kind="presentation" id="C1B-pz-sWQ"/>
+                                <segue destination="vhC-1T-i2U" kind="presentation" id="nSY-6f-MgG"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
