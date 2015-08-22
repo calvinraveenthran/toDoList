@@ -16,8 +16,17 @@
 
 @implementation AddToDoItemViewController
 
+
+//prepareForSegue
+//Checks if the save button was initiated &
+//if the text field isnt empty and creates
+//a toDo item where unwindToDoList is able to acced the item
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    //check if it was canceled or saved
     if (sender != self.saveButton) return;
+    
+    //create a toDoItem and return it
     if (self.textField.text.length > 0) {
         self.toDoItem = [[ToDoItem alloc] init];
         self.toDoItem.itemName = self.textField.text;
